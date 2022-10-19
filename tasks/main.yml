@@ -17,7 +17,7 @@
   ansible.builtin.pip:
     executable: /usr/bin/pip2
     name:
-      - git+https://git:{{ github_oauth_token }}@github.com/cisagov/cyhy-commander.git
+      - git+https://git:{{ github_oauth_token }}@github.com/cisagov/cyhy-commander.git@bug/update_pin_for_python-daemon
       - docutils
   # The value of github_oauth_token is sensitive so we need to ensure that it
   # is not accidentally leaked if the task fails.
